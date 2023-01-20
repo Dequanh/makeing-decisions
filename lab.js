@@ -75,25 +75,31 @@ if(temperature <= 60 && rain === true){
   Create a for-loop that runs 10 times, and on each iteration logs the word 'hello'.
 */
 
-//CODE HERE
-
+for (let i = 0; i < 10; i++) {
+  console.log('hello')
+}
 ////////// PROBLEM 6 //////////
 
 /*
   Create a for-loop that runs 10 times, logging the numbers 1 through 10. Ex, on the first iteration it would log 1, on the second iteration it would log 2.
 */
 
-//CODE HERE
+let numArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
+for (let i = 0; i < numArr.length; i++) {
+  console.log(numArr[i])
+}
 ////////// PROBLEM 7 //////////
 
 /*
   Create a for-loop that logs the numbers 0 through 10 backwards. Ex, on the first iteration it would log 10, on the second iteration it would log 9.
 */
 
-//CODE HERE
+let myArr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-
+for (let i = myArr.length -1; i >= 0; i--) {
+  console.log(myArr[i])
+}
 ////////// PROBLEM 8 //////////
 
 let score = 0;
@@ -103,8 +109,10 @@ let passingScore = 7;
   Create a while-loop that logs "Your score is not high enough" while the score variable above is below passingScore. In each iteration of the loop, increase the score by one. If your code is successful, you will see your logged statement 7 times.
 */
 
-//CODE HERE
-
+while (score < passingScore) {
+  console.log("Your score is not high enough")
+  score += 1
+}
 ////////// INTERMEDIATE PROBLEMS //////////
 
 ////////// PROBLEM 9 //////////
@@ -114,13 +122,19 @@ let passingScore = 7;
 
 */
 
-//CODE HERE
+let changeMyMind = true
 
+if(changeMyMind === true){
+  console.log(changeMyMind = !changeMyMind)
+} else if(changeMyMind === false){
+  console.log(changeMyMind = !changeMyMind)
+}
 ////////// PROBLEM 10 //////////
 // Using the "not" operator (!), change the current value of changeMyMind to true (it should currently be set to false due to the if-else statement in Problem 9). After you change the value of changeMyMind, console.log it's new value (it should now read true).
 
-//CODE HERE
-
+if(changeMyMind === false){
+  console.log(changeMyMind = !changeMyMind)
+}
 ////////// ADVANCED PROBLEMS //////////
 
 ////////// PROBLEM 11 //////////
@@ -128,4 +142,7 @@ let passingScore = 7;
 let z = 5;
 // Create a while loop that continues to run while z is greater than 0. Within the while loop, log a countdown from the value of z to 1. Once you have logged the countdown, make sure you decrement z by 1. If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
 
-//CODE HERE
+while (z > 0) {
+  console.log(`${z}`)
+  z -= 1
+}
